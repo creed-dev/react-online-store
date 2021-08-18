@@ -1,0 +1,12 @@
+.cart {
+	&__logo {
+		width: 40px;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		border-radius: 10px;
+		border: none;
+		cursor: pointer;
+	}
+}
