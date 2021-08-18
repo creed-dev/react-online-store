@@ -1,12 +1,13 @@
 .cart {
 	&__logo {
-		width: 40px;
+		width: 35px;
 	}
 	&__btn {
 		display: flex;
 		align-items: center;
-		border-radius: 10px;
+		border-radius: 50%;
 		border: none;
 		cursor: pointer;
+		padding: 10px;
 	}
 }
