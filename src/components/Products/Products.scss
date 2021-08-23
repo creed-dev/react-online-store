@@ -1,0 +1,12 @@
+.products {
+	padding-top: 30px;
+	&__category {
+		color: $main-color;
+	}
+	&__list {
+		padding: 10px 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}

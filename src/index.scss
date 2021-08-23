@@ -17,6 +17,10 @@ code {
 	margin: 0 auto;
 }
 
+@import './scss/variables.scss';
 @import './components/Header/Header.scss';
 @import './components//Header/Logo/Logo.scss';
 @import './components/Header/Cart/Cart.scss';
+@import './components/Navbar/Navbar.scss';
+@import './components/Products/Products.scss';
+@import './components/Products/Product/Product.scss';

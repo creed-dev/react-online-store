@@ -1,0 +1,29 @@
+.navbar {
+	width: 80%;
+	padding-top: 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	&__item {
+		color: #181b1e;
+		text-decoration: none;
+		border: 2px solid $main-color;
+		border-radius: 20px;
+		padding: 3px 10px;
+		font-size: 17px;
+		font-weight: 500;
+		&:hover {
+			background-color: #a8a9aa;
+			border-color: #a8a9aa;
+		}
+		&_active {
+			background-color: $main-color;
+			color: white;
+			&:hover {
+				background-color: $main-color;
+				border-color: $main-color;
+				color: white;
+			}
+		}
+	}
+}

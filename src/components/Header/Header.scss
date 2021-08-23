@@ -1,7 +1,7 @@
 .header {
 	padding-top: 20px;
 	height: 80px;
-	background-color: #181b1e;
+	background-color: $main-color;
 	&__wrapper {
 		display: flex;
 		align-items: center;
