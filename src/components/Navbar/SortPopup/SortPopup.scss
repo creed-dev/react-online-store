@@ -1,0 +1,28 @@
+.sort-popup {
+	cursor: pointer;
+	&__header {
+		width: 230px;
+		margin-top: 10px;
+		position: relative;
+	}
+	&__list {
+		padding: 5px 10px;
+		border: 2px solid $main-color;
+		width: 116px;
+		border-radius: 25px;
+		margin-left: 90px;
+		position: absolute;
+		&-item {
+			list-style-type: none;
+			border-bottom: 2px solid $main-color;
+			padding: 5px 0;
+			cursor: pointer;
+			&:last-child {
+				border-bottom: none;
+			}
+			&_active {
+				font-weight: 700;
+			}
+		}
+	}
+}

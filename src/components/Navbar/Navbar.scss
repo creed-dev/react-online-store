@@ -1,9 +1,13 @@
 .navbar {
-	width: 80%;
+	width: 70%;
 	padding-top: 15px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	&__item {
 		color: #181b1e;
 		text-decoration: none;

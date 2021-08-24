@@ -18,9 +18,11 @@ code {
 }
 
 @import './scss/variables.scss';
+@import './scss/mixins.scss';
 @import './components/Header/Header.scss';
 @import './components//Header/Logo/Logo.scss';
 @import './components/Header/Cart/Cart.scss';
 @import './components/Navbar/Navbar.scss';
 @import './components/Products/Products.scss';
-@import './components/Products/Product/Product.scss';
+@import './components/Products/Product/Iphones/Iphones.scss';
+@import './components/Navbar/SortPopup/SortPopup.scss';

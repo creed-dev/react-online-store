@@ -1,27 +1,62 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import SortPopup from './SortPopup/SortPopup';
 
 const Navbar = props => {
 	return (
-		<nav className="navbar">
-			<a className="navbar__item navbar__item_active" href="#">
-				Все
-			</a>
-			<a className="navbar__item" href="#">
-				iPhone
-			</a>
-			<a className="navbar__item" href="#">
-				iPad
-			</a>
-			<a className="navbar__item" href="#">
-				Mac
-			</a>
-			<a className="navbar__item" href="#">
-				Watch
-			</a>
-			<a className="navbar__item" href="#">
-				AirPods
-			</a>
-		</nav>
+		<div className="navbar-wrapper">
+			<nav className="navbar">
+				<NavLink
+					to="/all"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					Все
+				</NavLink>
+				<NavLink
+					to="/iphone"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					iPhone
+				</NavLink>
+				<NavLink
+					to="/ipad"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					iPad
+				</NavLink>
+				<NavLink
+					to="/mac"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					Mac
+				</NavLink>
+				<NavLink
+					to="/watch"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					Watch
+				</NavLink>
+				<NavLink
+					to="/airpods"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					Air Pods
+				</NavLink>
+			</nav>
+			<SortPopup items={['популярности', 'цене', 'алфавиту']} />
+		</div>
 	);
 };
 
