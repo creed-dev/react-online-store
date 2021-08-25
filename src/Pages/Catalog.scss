@@ -1,11 +1,9 @@
-.products {
-	padding-top: 10px;
+.catalog {
 	&__category {
 		color: $main-color;
 	}
 	&__list {
-		padding: 10px 0;
-		margin: 0 -15px;
+		margin: 0 -37px;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;

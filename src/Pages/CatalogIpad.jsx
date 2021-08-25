@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProductsIpad = props => {
 	return (
-		<div className="products">
-			<h2 className="products__category">iPad</h2>
+		<div className="catalog">
+			<h2 className="catalog__category">iPad</h2>
 		</div>
 	);
 };

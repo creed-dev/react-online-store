@@ -1,0 +1,19 @@
+.catalog-item {
+	padding: 15px 4px;
+	border: 2px solid $main-color;
+	width: 16%;
+	border-radius: 25px;
+	margin: 15px;
+	&__img {
+		width: 100px;
+		height: 160px;
+		display: block;
+		margin: 0 auto;
+	}
+	&__name {
+		margin-top: 10px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 20px;
+	}
+}

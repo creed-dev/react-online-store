@@ -1,0 +1,36 @@
+{
+	"iphoneCatalog": [
+		{
+			"name": "iPhone SE 2020",
+			"imgUrl": "https://img-host.ru/1d9u6.jpg"
+		},
+		{
+			"name": "iPhone XR",
+			"imgUrl": "https://img-host.ru/aN31n.jpg"
+		},
+		{
+			"name": "iPhone 11",
+			"imgUrl": "https://img-host.ru/C42DK.jpg"
+		},
+		{
+			"name": "iPhone 11 Pro",
+			"imgUrl": "https://img-host.ru/GIrVl.jpg"
+		},
+		{
+			"name": "iPhone 12",
+			"imgUrl": "https://img-host.ru/7Q33b.jpg"
+		},
+		{
+			"name": "iPhone 12 Mini",
+			"imgUrl": "https://img-host.ru/l4kF5.jpg"
+		},
+		{
+			"name": "iPhone 12 Pro",
+			"imgUrl": "https://img-host.ru/umspW.jpg"
+		},
+		{
+			"name": "iPhone 12 Pro Max",
+			"imgUrl": "https://img-host.ru/kB47q.jpg"
+		}
+	]
+}

@@ -1,27 +1,38 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Route } from 'react-router';
-import { Redirect, Switch } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import ProductsAirPods from './components/Products/ProductsAirPods/ProductsAirPods';
-import ProductsIpad from './components/Products/ProductsIpad/ProductsIpad';
-import ProductsIphone from './components/Products/ProductsIphone/ProductsIphone';
-import ProductsMac from './components/Products/ProductsMac/ProductsMac';
-import ProductsWatch from './components/Products/ProductsWatch/ProductsWatch';
+import CatalogAirPods from './Pages/CatalogAirPods';
+import CatalogIpad from './Pages/CatalogIpad';
+import CatalogIphone from './Pages/CatalogIphone';
+import CatalogMac from './Pages/CatalogMac';
+import CatalogWatch from './Pages/CatalogWatch';
 
 const App = props => {
+	const [state, setState] = useState([]);
+
+	useEffect(() => {
+		axios.get('http://localhost:3000/db.json').then(({ data }) => {
+			setState(data.iphoneCatalog);
+		});
+	}, []);
+
 	return (
 		<div>
 			<Header />
 			<div className="container">
 				<Navbar />
 				<Switch>
-					<Route path="/iphone" component={ProductsIphone}></Route>
-					<Route path="/ipad" component={ProductsIpad}></Route>
-					<Route path="/mac" component={ProductsMac}></Route>
-					<Route path="/watch" component={ProductsWatch}></Route>
-					<Route path="/airpods" component={ProductsAirPods}></Route>
-					<Redirect from="/" to="/all" />
+					<Route
+						path="/iphone"
+						render={() => <CatalogIphone iphones={state} />}
+					></Route>
+					<Route path="/ipad" component={CatalogIpad}></Route>
+					<Route path="/mac" component={CatalogMac}></Route>
+					<Route path="/watch" component={CatalogWatch}></Route>
+					<Route path="/airpods" component={CatalogAirPods}></Route>
 				</Switch>
 			</div>
 		</div>
