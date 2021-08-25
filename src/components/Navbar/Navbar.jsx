@@ -7,6 +7,14 @@ const Navbar = props => {
 		<div className="navbar-wrapper">
 			<nav className="navbar">
 				<NavLink
+					to="/all"
+					className="navbar__item"
+					activeClassName="navbar__item_active"
+					href="#"
+				>
+					Все
+				</NavLink>
+				<NavLink
 					to="/iphone"
 					className="navbar__item"
 					activeClassName="navbar__item_active"

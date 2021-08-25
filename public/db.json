@@ -2,7 +2,8 @@
 	"iphoneCatalog": [
 		{
 			"name": "iPhone SE 2020",
-			"imgUrl": "https://img-host.ru/1d9u6.jpg"
+			"imgUrl": "https://img-host.ru/1d9u6.jpg",
+			"link": "/iphone/se"
 		},
 		{
 			"name": "iPhone XR",
@@ -31,6 +32,19 @@
 		{
 			"name": "iPhone 12 Pro Max",
 			"imgUrl": "https://img-host.ru/kB47q.jpg"
+		}
+	],
+	"iphoneSe": [
+		{
+			"color": [
+				"https://img-host.ru/UULOy.jpg",
+				"https://img-host.ru/01834.jpg",
+				"https://img-host.ru/Ep7Ud.jpg"
+			],
+			"adada": [364, 12328, 2256]
+		},
+		{
+			"capacity": [64, 128, 256]
 		}
 	]
 }

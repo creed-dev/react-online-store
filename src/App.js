@@ -1,38 +1,30 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Route } from 'react-router';
-import { Switch } from 'react-router-dom';
+import { Redirect, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import CatalogAirPods from './Pages/CatalogAirPods';
-import CatalogIpad from './Pages/CatalogIpad';
-import CatalogIphone from './Pages/CatalogIphone';
-import CatalogMac from './Pages/CatalogMac';
-import CatalogWatch from './Pages/CatalogWatch';
+import AirPodsСatalog from './Pages/AirPodsСatalog';
+import AllCatalog from './Pages/AllСatalog';
+import IpadСatalog from './Pages/IpadСatalog';
+import IphoneСatalog from './Pages/IphoneСatalog';
+import MacСatalog from './Pages/MacСatalog';
+import WatchСatalog from './Pages/WatchСatalog';
 
 const App = props => {
-	const [state, setState] = useState([]);
-
-	useEffect(() => {
-		axios.get('http://localhost:3000/db.json').then(({ data }) => {
-			setState(data.iphoneCatalog);
-		});
-	}, []);
-
 	return (
 		<div>
 			<Header />
 			<div className="container">
 				<Navbar />
 				<Switch>
-					<Route
-						path="/iphone"
-						render={() => <CatalogIphone iphones={state} />}
-					></Route>
-					<Route path="/ipad" component={CatalogIpad}></Route>
-					<Route path="/mac" component={CatalogMac}></Route>
-					<Route path="/watch" component={CatalogWatch}></Route>
-					<Route path="/airpods" component={CatalogAirPods}></Route>
+					<Route path="/all" render={() => <AllCatalog />} />
+					<Route path="/iphone" render={() => <IphoneСatalog />} />
+					<Route path="/ipad" render={() => <IpadСatalog />} />
+					<Route path="/mac" render={() => <MacСatalog />} />
+					<Route path="/watch" render={() => <WatchСatalog />} />
+					<Route path="/airpods" render={() => <AirPodsСatalog />} />
+					<Redirect from="/" to="/all" />
 				</Switch>
 			</div>
 		</div>

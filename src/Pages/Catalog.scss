@@ -1,6 +1,9 @@
 .catalog {
 	&__category {
 		color: $main-color;
+		margin-top: 15px;
+		font-size: 30px;
+		font-weight: 700;
 	}
 	&__list {
 		margin: 0 -37px;

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CatalogItemIphone = props => {
 	return (
-		<div className="catalog-item">
+		<Link className="catalog-item" to={props.link}>
 			<img src={props.imgUrl} alt="" className="catalog-item__img" />
 			<div className="catalog-item__name">{props.name}</div>
-		</div>
+		</Link>
 	);
 };
 
